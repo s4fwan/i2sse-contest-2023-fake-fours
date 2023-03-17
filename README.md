@@ -1,11 +1,14 @@
 # I2SSE Contest
 
-This is the repository for the I2SSE contest. Use this README to descrbe the basics of you project.
+Subject_Judge folder contains Processing animation for "Judge"
+Object_Jumping_Cucumber folder contains Processing animation for "Jumping Cucumber"
 
 
 ## Topic
 
-Add here what you topic was, and a brief synopsis of your program describing what it does.
+Subject: Judge
+Object: Cucumber
+Action: Jumping
 
 ## User Manual or Instructions
 
