@@ -10,10 +10,13 @@ Our project will provide code that shows two images / animations. The first code
 ## User Stories and Requirements
 
 **User Story:** As a user, I want to see an animation of CUCUMBER, so that I can play with it
+
 **User Story Acceptance Criteria:** 
 - Given the Processing Program, when the user presses the play button, then a JUMPING CUCUMBER appears. 
 - Given a running program, when the user clicks on the CUCUMBER, then the CUCUMBER stops JUMPING.
+
 **Requirement:** Show an animation of JUDGE
+
 **Requirement Acceptance Criteria:** 
 - JUDGE is easily recognisable
 - The figure is animated
