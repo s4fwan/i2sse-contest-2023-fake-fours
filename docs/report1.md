@@ -6,15 +6,23 @@ Use the structure below for your report. Remove lines 3 and 5 of the markdown fi
 
 ## Introduction
 
- - Provide a brief description of the topic, what the two programs will do, and what to expect.
-
+Our project will provide code that shows two images / animations. The first code will show a cucumber jumping up and down on the screen. The second code will provide an animation of a custom drawn judge.
 ## User Stories and Requirements
 
- - List all user stories and requirements, together with their acceptance criteria.
+**User Story:** As a user, I want to see an animation of CUCUMBER, so that I can play with it
+**User Story Acceptance Criteria:** 
+- Given the Processing Program, when the user presses the play button, then a JUMPING CUCUMBER appears. 
+- Given a running program, when the user clicks on the CUCUMBER, then the CUCUMBER stops JUMPING.
+**Requirement:** Show an animation of JUDGE
+**Requirement Acceptance Criteria:** 
+- JUDGE is easily recognisable
+- The figure is animated
+- The user can interact with the figure
 
 ## User Acceptance Tests
- - Define test cases for user stories and requirements that your team decided to test as part of user acceptance testing. 
- - Show that these tests cover the most important aspects of the two programs.
+- Both JUDGE and CUCUMBER must be recognisable
+- Both JUDGE and CUCUMBER are animated
+- CUCUMBER has to be JUMPING
 
 ## Coding Guidelines
  - General Java coding convention
