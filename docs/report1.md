@@ -17,7 +17,14 @@ Use the structure below for your report. Remove lines 3 and 5 of the markdown fi
  - Show that these tests cover the most important aspects of the two programs.
 
 ## Coding Guidelines
- - Define coding guidelines that your team agreed to adhere to during the project.
+ - General Java coding convention
+ - Use meaningful names for variables
+ - camelCase for variable names
+ - Final variable names in UPPER_CASE
+ - 4 space indentations (one Tab in processing)
+ - Leave space between functions
+ - Use brackets whenever possible
+ - Add single-line and multi-line comments to explain the code
  
 ## Project Management
  - List the tasks and issues that are currently on your project board, and their status. Include who has been assigned to do the job, and who will be responsible for reviewing the tasks before it is moved to the `Done` column.
