@@ -1,22 +1,25 @@
-int x = 145;
-int y = 155; 
-int a = 120;
-int b = 30;
-int c = 8;
-void setup(){
-  size(300,300); 
+//Global Variables
+int windowWidth;
+int windowHeight;
+PImage icon;
+
+void settings() {
+  windowWidth = displayWidth/2;
+  windowHeight = displayHeight/2;
+  //println(windowWidth);
+  //println(windowHeight);
+  size(windowWidth, windowHeight);
 }
 
-void draw(){
-  background(255);
-  ellipse(155,y,120,30); 
-  fill(50,200,50); 
-  y=y+c;
-if(y>width-20 || y<20){
-  c=-c;
+void setup() {
+  icon = loadImage("cucumber_icon.png");
+  surface.setTitle("Jumping Cucumber (◕‿◕)");
+  surface.setResizable(true);
+  surface.setLocation(displayWidth/2-width/2, displayHeight/2-height/2);
+  surface.setIcon(icon);
+  background(0);
 }
-if(y>height-10 || y<150){
-  c=-c;
-}
+
+void draw() {
   
 }
