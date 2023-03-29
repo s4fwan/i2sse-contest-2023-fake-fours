@@ -7,7 +7,7 @@ int cucumberSize;
 int cucumberX;
 int cucumberY;
 boolean jump;
-int jumpingFactor;
+float jumpingFactor;
 
 void settings() {
   windowWidth = int(displayWidth/1.5);
@@ -27,7 +27,7 @@ void setup() {
   cucumberSize = windowWidth/10;
   cucumberX = cucumberSize/2;
   cucumberY = windowHeight/2;
-  jumpingFactor = 1;
+  jumpingFactor = 1.2;
   jump = true;
   
   //other
@@ -51,7 +51,7 @@ void draw() {
  */
 void jumpingCalc() {
   if(jump) { //calculates the jump
-    
+    cucumberY -= int(2*jumpingFactor);
   }
   else { //calculates the fall
     
