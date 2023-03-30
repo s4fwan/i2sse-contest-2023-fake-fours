@@ -4,8 +4,7 @@ int windowHeight;
 PImage icon;
 PImage cucumber;
 int cucumberSize;
-int cucumberX;
-int cucumberY;
+PVector cucumberPosition;
 boolean jump;
 float jumpingFactor;
 
@@ -25,8 +24,7 @@ void setup() {
   //define variables
   cucumber = loadImage("cucumber_design.png");
   cucumberSize = windowWidth/10;
-  cucumberX = cucumberSize/2;
-  cucumberY = windowHeight/2;
+  cucumberPosition = new PVector(cucumberSize/2, windowHeight/2);
   jumpingFactor = 1.2;
   jump = true;
   
@@ -37,10 +35,10 @@ void setup() {
 
 void draw() {
   background(0);
-  image(cucumber, cucumberX, cucumberY, cucumberSize, cucumberSize);
-  cucumberX += 5;
-  if(cucumberX > windowWidth+(cucumberSize/2)) {
-    cucumberX = -cucumberSize;
+  image(cucumber, cucumberPosition.x, cucumberPosition.y, cucumberSize, cucumberSize);
+  cucumberPosition.x += 2;
+  if(cucumberPosition.x > windowWidth+(cucumberSize/2)) {
+    cucumberPosition.x = -cucumberSize;
   }
   //jumpingCalc();
 }
@@ -51,7 +49,7 @@ void draw() {
  */
 void jumpingCalc() {
   if(jump) { //calculates the jump
-    cucumberY -= int(2*jumpingFactor);
+    
   }
   else { //calculates the fall
     
