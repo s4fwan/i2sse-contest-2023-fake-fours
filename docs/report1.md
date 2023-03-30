@@ -1,9 +1,5 @@
 # Interim report
 
-Before the deadline, download a PDF version of this report, and submit it on iLearn. We will mark the report uploaded on iLearn.
-
-Use the structure below for your report. Remove lines 3 and 5 of the markdown file.
-
 ## Introduction
 
 Our project will provide code that shows two images / animations. The first code will show a cucumber jumping up and down on the screen. The second code will provide an animation of a custom drawn judge.
@@ -23,9 +19,14 @@ Our project will provide code that shows two images / animations. The first code
 - The user can interact with the figure
 
 ## User Acceptance Tests
-- Both JUDGE and CUCUMBER must be recognisable
-- Both JUDGE and CUCUMBER are animated
+- JUDGE must be recognisable 
+- CUCUMBER must be recognisable
+- JUDGE must be animated
+- CUCUMBER must be animated
 - CUCUMBER has to be JUMPING
+- When User clicks on CUCUMBER, it stops JUMPING
+- When CUCUMBER passes boarder, it will reappear on opposite sides at the same x or y coordinates
+- When JUDGE passes boarder, it will reappear on opposite sides at the same x or y coordinates
 
 ## Coding Guidelines
  - General Java coding convention
