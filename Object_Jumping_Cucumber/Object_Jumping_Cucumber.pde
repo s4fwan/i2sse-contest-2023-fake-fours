@@ -42,7 +42,7 @@ void draw() {
   if(cucumberX > windowWidth+(cucumberSize/2)) {
     cucumberX = -cucumberSize;
   }
-  jumpingCalc();
+  //jumpingCalc();
 }
 
 /**
