@@ -37,6 +37,8 @@ void setup() {
 
 void draw() {
   background(0);
+  //This snippet of code shows the image of the cucumber and the coordinates it starts at. The cucumber is then made to move across screen from left to right.
+  //This is done by the use of an if statement, so when the cucumber leaves the screen on the right it loops back around the left (the beginning). 
   image(cucumber, cucumberX, cucumberY, cucumberSize, cucumberSize);
   cucumberX += 5;
   if(cucumberX > windowWidth+(cucumberSize/2)) {
