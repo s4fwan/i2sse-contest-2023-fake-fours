@@ -39,4 +39,16 @@ void draw() {
   if(judgeY > height + 51) { // meaning if the judge goes past the y axis by 50 pixels it will reapper at 0
     judgeY = 0;
   }
+  
+  /**
+  * This checks if the judge's x position is outside of the window.
+  * If so, then the position is reset to its default value.
+  * Otherwise, the position gets incremented by 3, to simulate it moving.
+  */
+  if(judgeX > width +51) {
+    judgeX = -51;
+  }
+  else {
+    judgeX += 3;
+  }
 }
