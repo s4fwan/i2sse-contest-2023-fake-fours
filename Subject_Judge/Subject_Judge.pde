@@ -1,4 +1,4 @@
-//global variables
+  //global variables
 int windowWidth;
 int windowHeight;
 PImage icon;
@@ -36,7 +36,7 @@ void draw() {
   image(judge, judgeX, judgeY, judgeSize, judgeSize);
   judgeY += 3;
   
-  if(judgeY > height + 50) {
+  if(judgeY > height + 51) { // meaning if the judge goes past the y axis by 50 pixels it will reapper at 0
     judgeY = 0;
   }
 }

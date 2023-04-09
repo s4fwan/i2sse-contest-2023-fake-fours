@@ -4,8 +4,7 @@ int windowHeight;
 PImage icon;
 PImage cucumber;
 int cucumberSize;
-int cucumberX;
-int cucumberY;
+PVector cucumberPosition;
 boolean jump;
 float jumpingFactor;
 
@@ -25,8 +24,7 @@ void setup() {
   //define variables
   cucumber = loadImage("cucumber_design.png");
   cucumberSize = windowWidth/10;
-  cucumberX = cucumberSize/2;
-  cucumberY = windowHeight/2;
+  cucumberPosition = new PVector(cucumberSize/2, windowHeight/2);
   jumpingFactor = 1.2;
   jump = true;
   
@@ -37,12 +35,19 @@ void setup() {
 
 void draw() {
   background(0);
+<<<<<<< HEAD
   //This snippet of code shows the image of the cucumber and the coordinates it starts at. The cucumber is then made to move across screen from left to right.
   //This is done by the use of an if statement, so when the cucumber leaves the screen on the right it loops back around the left (the beginning). 
   image(cucumber, cucumberX, cucumberY, cucumberSize, cucumberSize);
   cucumberX += 5;
   if(cucumberX > windowWidth+(cucumberSize/2)) {
     cucumberX = -cucumberSize;
+=======
+  image(cucumber, cucumberPosition.x, cucumberPosition.y, cucumberSize, cucumberSize);
+  cucumberPosition.x += 2;
+  if(cucumberPosition.x > windowWidth+(cucumberSize/2)) {
+    cucumberPosition.x = -cucumberSize;
+>>>>>>> cb569fe5e1e2bc07c15647d735abf2afe59abc2b
   }
   //jumpingCalc();
 }
@@ -53,7 +58,7 @@ void draw() {
  */
 void jumpingCalc() {
   if(jump) { //calculates the jump
-    cucumberY -= int(2*jumpingFactor);
+    
   }
   else { //calculates the fall
     
