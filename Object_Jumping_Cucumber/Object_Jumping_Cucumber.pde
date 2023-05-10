@@ -1,17 +1,28 @@
+class Object {
+    PImage image;
+    PVector position;
+    float yDirection;
+    boolean xDirection;
+    PVector velocity;
+    float jumpSpeed;
+    float moveSpeed;
+    float size;
+}
+
 //global variables
-int windowWidth;
-int windowHeight;
+Object cucumber; 
+
+float up;
+float down;
+float left;
+float right;
+
 PImage icon;
-PImage cucumber;
-int cucumberSize;
-PVector cucumberPosition;
-boolean jump;
-float jumpingFactor;
+float gravity = 0.5;
+float ground;
 
 void settings() {
-  windowWidth = int(displayWidth/1.5);
-  windowHeight = int(displayHeight/1.5);
-  size(windowWidth, windowHeight);
+  size(int(displayWidth/1.5), int(displayHeight/1.5));
 }
 
 void setup() {
@@ -21,13 +32,17 @@ void setup() {
   surface.setLocation(displayWidth/2-width/2, displayHeight/2-height/2);
   surface.setIcon(icon);
   
-  //define variables
-  cucumber = loadImage("cucumber_design.png");
-  cucumberSize = windowWidth/10;
-  cucumberPosition = new PVector(cucumberSize/2, windowHeight/2);
-  jumpingFactor = 1.2;
-  jump = true;
-  
+  //define cucumber object
+  cucumber = new Object();
+  cucumber.image = loadImage("cucumber_design.png");
+  cucumber.size = width/10;
+  ground = height/2+cucumber.size/2;
+  cucumber.position = new PVector(cucumber.size/2, ground);
+  cucumber.yDirection = 1;
+  cucumber.velocity = new PVector(0, 0);
+  cucumber.jumpSpeed = 10;
+  cucumber.moveSpeed = 4;
+ 
   //other
   frameRate(60);
   imageMode(CENTER);
@@ -35,32 +50,70 @@ void setup() {
 
 void draw() {
   background(0);
-<<<<<<< HEAD
-  //This snippet of code shows the image of the cucumber and the coordinates it starts at. The cucumber is then made to move across screen from left to right.
-  //This is done by the use of an if statement, so when the cucumber leaves the screen on the right it loops back around the left (the beginning). 
-  image(cucumber, cucumberX, cucumberY, cucumberSize, cucumberSize);
-  cucumberX += 5;
-  if(cucumberX > windowWidth+(cucumberSize/2)) {
-    cucumberX = -cucumberSize;
-=======
-  image(cucumber, cucumberPosition.x, cucumberPosition.y, cucumberSize, cucumberSize);
-  cucumberPosition.x += 2;
-  if(cucumberPosition.x > windowWidth+(cucumberSize/2)) {
-    cucumberPosition.x = -cucumberSize;
->>>>>>> cb569fe5e1e2bc07c15647d735abf2afe59abc2b
-  }
-  //jumpingCalc();
+  updateCucumber();
 }
 
-/**
- * Function calculates the y position of the cucumber
- * to make it 'jump'
- */
-void jumpingCalc() {
-  if(jump) { //calculates the jump
-    
+void updateCucumber() {
+  //image(cucumber.image, cucumber.position.x, cucumber.position.y, cucumber.size, cucumber.size);
+ 
+  if(cucumber.xDirection) {
+    right = -1;
+    left = 0;
   }
-  else { //calculates the fall
-    
+  else {
+    right = 0;
+    left = 1;
+  }
+  
+  //Gravity applied if above ground
+  if(cucumber.position.y < ground) {
+    cucumber.velocity.y += gravity;
+  }
+  else {
+    cucumber.velocity.y = 0;
+  }
+  
+  //If cucumber on ground and user clicks, upward velocity is jump speed
+  if(cucumber.position.y >= ground && up != 0) {
+    cucumber.velocity.y = -cucumber.jumpSpeed;
+  }
+  
+  cucumber.velocity.x = cucumber.moveSpeed * (left+right);
+  
+  PVector nextPosition = new PVector(cucumber.position.x, cucumber.position.y);
+  nextPosition.add(cucumber.velocity);
+  println(cucumber.velocity);
+  
+  float offset = cucumber.size/2;
+  if(nextPosition.x > (width-offset)) {
+    cucumber.xDirection = !cucumber.xDirection;
+  }
+  if(nextPosition.x < (0+offset)) {
+    cucumber.xDirection = !cucumber.xDirection;
+  }
+  cucumber.position.x = nextPosition.x;
+  if(nextPosition.y > offset && nextPosition.y < (height-offset)) {
+    cucumber.position.y = nextPosition.y;
+  }
+  
+  pushMatrix();
+  
+  translate(cucumber.position.x, cucumber.position.y);
+  
+  imageMode(CENTER);
+  image(cucumber.image, 0, 0, cucumber.size, cucumber.size);
+  
+  popMatrix();
+}
+
+void mousePressed() {
+  if(mouseButton == LEFT) {
+    up = -1;
+  }
+}
+
+void mouseReleased() {
+  if(mouseButton == LEFT) {
+    up = 0;
   }
 }
