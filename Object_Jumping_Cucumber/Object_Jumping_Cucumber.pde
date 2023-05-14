@@ -17,12 +17,13 @@ float down;
 float left;
 float right;
 
+PImage background;
 PImage icon;
 float gravity = 0.5;
 float ground;
 
 void settings() {
-  size(int(displayWidth/1.5), int(displayHeight/1.5));
+  size(int(displayWidth/1.5), int((displayWidth/1.5)/16*9));
 }
 
 void setup() {
@@ -31,13 +32,15 @@ void setup() {
   surface.setTitle("Jumping Cucumber (◕‿◕)");
   surface.setLocation(displayWidth/2-width/2, displayHeight/2-height/2);
   surface.setIcon(icon);
+  background = loadImage("background.jpg");
+  background.resize(width, 0);
   
   //define cucumber object
   cucumber = new Object();
   cucumber.image = loadImage("cucumber_design.png");
   cucumber.size = width/10;
   ground = height/2+cucumber.size/2;
-  cucumber.position = new PVector(cucumber.size/2, ground);
+  cucumber.position = new PVector(cucumber.size/2+(width*0.025), ground);
   cucumber.yDirection = 1;
   cucumber.velocity = new PVector(0, 0);
   cucumber.jumpSpeed = 10;
@@ -49,7 +52,8 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(background);
+  //image(background, width/2, height/2, width, height);
   updateCucumber();
 }
 
@@ -85,10 +89,10 @@ void updateCucumber() {
   println(cucumber.velocity);
   
   float offset = cucumber.size/2;
-  if(nextPosition.x > (width-offset)) {
+  if(nextPosition.x > (width-offset-(width*0.025))) {
     cucumber.xDirection = !cucumber.xDirection;
   }
-  if(nextPosition.x < (0+offset)) {
+  if(nextPosition.x < (0+offset+(width*0.025))) {
     cucumber.xDirection = !cucumber.xDirection;
   }
   cucumber.position.x = nextPosition.x;
