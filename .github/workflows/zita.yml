@@ -41,13 +41,13 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file ./code_checker/pom.xml
       
-    - name: Run Atelier-PMD
+    - name: Run Zita-PMD
       run: java -cp ./code_checker/target/atelier-pmd-jar-with-dependencies.jar nl.utwente.atelierpmd.LocalRunner ./project_code/Object_Jumping_Cucumber/
     
     - name: Generate annotations
       uses: jwgmeligmeyling/pmd-github-action@master
       with:
-         name: Atelier-PMD Report
-         title: Atelier-PMD Report
+         name: Zita-PMD Report
+         title: Zita-PMD Report
          path: '**/output.xml'
 
