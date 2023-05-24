@@ -4,7 +4,7 @@ class Object {
     float yDirection;
     boolean xDirection;
     PVector velocity;
-    float jumpSpeed;
+    float jumpHeight;
     float moveSpeed;
     float size;
 }
@@ -12,10 +12,9 @@ class Object {
 //global variables
 Object cucumber; 
 
-float up;
-float down;
-float left;
-float right;
+float oUp;
+float oLeft;
+float oRight;
 
 PImage background;
 PImage icon;
@@ -43,7 +42,7 @@ void setup() {
   cucumber.position = new PVector(cucumber.size/2+(width*0.025), ground);
   cucumber.yDirection = 1;
   cucumber.velocity = new PVector(0, 0);
-  cucumber.jumpSpeed = 10;
+  cucumber.jumpHeight = 10;
   cucumber.moveSpeed = 4;
  
   //other
@@ -53,20 +52,18 @@ void setup() {
 
 void draw() {
   background(background);
-  //image(background, width/2, height/2, width, height);
   updateCucumber();
+  //line(100, ground, 500, ground);
 }
 
 void updateCucumber() {
-  //image(cucumber.image, cucumber.position.x, cucumber.position.y, cucumber.size, cucumber.size);
- 
   if(cucumber.xDirection) {
-    right = -1;
-    left = 0;
+    oRight = -1;
+    oLeft = 0;
   }
   else {
-    right = 0;
-    left = 1;
+    oRight = 0;
+    oLeft = 1;
   }
   
   //Gravity applied if above ground
@@ -78,11 +75,11 @@ void updateCucumber() {
   }
   
   //If cucumber on ground and user clicks, upward velocity is jump speed
-  if(cucumber.position.y >= ground && up != 0) {
-    cucumber.velocity.y = -cucumber.jumpSpeed;
+  if(cucumber.position.y >= ground && oUp != 0) {
+    cucumber.velocity.y = -cucumber.jumpHeight;
   }
   
-  cucumber.velocity.x = cucumber.moveSpeed * (left+right);
+  cucumber.velocity.x = cucumber.moveSpeed * (oLeft+oRight);
   
   PVector nextPosition = new PVector(cucumber.position.x, cucumber.position.y);
   nextPosition.add(cucumber.velocity);
@@ -112,12 +109,12 @@ void updateCucumber() {
 
 void mousePressed() {
   if(mouseButton == LEFT) {
-    up = -1;
+    oUp = -1;
   }
 }
 
 void mouseReleased() {
   if(mouseButton == LEFT) {
-    up = 0;
+    oUp = 0;
   }
 }
