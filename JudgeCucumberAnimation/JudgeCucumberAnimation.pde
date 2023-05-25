@@ -9,6 +9,7 @@ SoundFile bgMusic;
 
 float gravity = 0.5; //
 float ground;
+int points;
 
 PImage background;
 PImage icon;
@@ -26,7 +27,7 @@ void setup() {
   icon = loadImage("icon.png");
   background = loadImage("background.jpg");
   gameOverImg = loadImage("gameOver.jpg");
-  surface.setTitle("Cucumber Judge");
+  surface.setTitle("Cucumber Justice");
   surface.setLocation(displayWidth/2-width/2, displayHeight/2-height/2);
   surface.setIcon(icon);
   background.resize(width, 0);
@@ -52,15 +53,15 @@ void setup() {
   judge.size = width/400;
   judge.position = new PVector((judge.size*judge.current.width)/2, ground);
   
-  //cum
-  cucumber = new Object(12, 6); //jump height, move speed
+  //cucumber
+  cucumber = new Object(10, 6); //jump height, move speed
   cucumber.image = loadImage("cucumber_design.png");
   cucumber.size = width/500;
   cucumber.position = new PVector(width-cucumber.size*cucumber.image.width, ground);
   cucumber.velocity = new PVector(0, 0);
   
   //
-  desk = new Objective(loadImage("desk.png"), new PVector(width/2, ground), width/400);
+  desk = new Objective(loadImage("desk.png"), width/400);
   health = new HealthBar();
   //
   presetSetup();
@@ -81,7 +82,7 @@ void draw() {
     cucumber.update();
     cucumber.display();
     health.display();
-    desk.display();
+    desk.logic();
   }
 }
 

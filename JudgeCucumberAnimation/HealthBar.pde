@@ -9,7 +9,6 @@ class HealthBar {
     rect(position.x, position.y, size.x, size.y);
     
     float drawWidth = (judge.health/50) * size.x;
-    println(judge.health);
     fill(255,0,0);
     noStroke();
     rect(position.x, position.y, drawWidth, size.y);
