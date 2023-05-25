@@ -54,7 +54,7 @@ void setup() {
   judge.position = new PVector((judge.size*judge.current.width)/2, ground);
   
   //cucumber
-  cucumber = new Object(10, 6); //jump height, move speed
+  cucumber = new Object(10, 5); //jump height, move speed
   cucumber.image = loadImage("cucumber_design.png");
   cucumber.size = width/500;
   cucumber.position = new PVector(width-cucumber.size*cucumber.image.width, ground);
