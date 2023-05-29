@@ -61,9 +61,7 @@ Roles and responsibilities:
 The roles our teamed agreed on during week 8 when the sprint commenced include Safwan as our SCRUM master and Allen as our Product Owner. Safwan was the most appropriate choice as our SCRUM master as he has a deep understanding surrounding GitHub and possesses a lot of good group leader qualities. The other team members, Michael and Amelia, had the responsibility of taking turns typing up the weekly retrospectives that were due at the end of each lesson and then submitting them once all the team had reviewed and approved.
 
 Review process:
-Process defined before the sprint to ensure software quality include
-- Planning (e.g., plans to complete tasks early, making prototypes/ drafts of work)
-- Testing (testing as you go and doing tests early on, multiple tests, different types of tests)
+The first review process that our group defied before the sprint to ensure software quality was planning. We decided to make earlier deadlines for tasks to allow room for any issues that might occur and extra time to make edits if needed. At the start of the sprint our group looked at all the upcoming tasks during the sprint and bought forward the due date by a couple days for each task. By having work completed early we were able to make prototypes of our programs and then add extra details and improve our code. This worked successfully majority of the time and allowed us to be prepared and create programs of a high standard. 
 
 DoD:
 -	All user story and acceptance criteria is met 
