@@ -1,4 +1,4 @@
-# Final Report jj
+# Final Report 
 
 ## Introduction
 
@@ -48,16 +48,22 @@ the test failed or passed.
 ## Software Quality
 - Include a table that lists all warnings that the Comp1050 Checker
 PMD in the GitHub Actions tab raises for your project.
+
+1 warning from the Comp1050 checker:
+- Code style (variables were too short)
+
 - List which issues you fixed since week 11. Give a brief rationale
 for fixing the issue.
 
 ## Project Management
-- Describe the roles and responsibilities of the team members that were agreed on before the sprint commenced.
 
-The roles our teamed agreed on during week 8 when the sprint commenced include Safwan as our SCRUM master and Allen as our Product Owner. Safwan was the most appropriate choice as our SCRUM master as he has a deep understanding surrounding GitHub and possesses a lot of good group leader qualities. 
+Roles and responsibilities:
+The roles our teamed agreed on during week 8 when the sprint commenced include Safwan as our SCRUM master and Allen as our Product Owner. Safwan was the most appropriate choice as our SCRUM master as he has a deep understanding surrounding GitHub and possesses a lot of good group leader qualities. The other team members, Michael and Amelia, had the responsibility of taking turns typing up the weekly retrospectives that were due at the end of each lesson and then submitting them once all the team had reviewed and approved.
 
-- Describe the review processes that you defined before the sprint to ensure software quality.
-- Provide your "Definition of Done."
+Review process:
+Process defined before the sprint to ensure software quality include
+- Planning (e.g., plans to complete tasks early, making prototypes/ drafts of work)
+- Testing (testing as you go and doing tests early on, multiple tests, different types of tests)
 
 DoD:
 -	All user story and acceptance criteria is met 
@@ -69,7 +75,7 @@ DoD:
 -	All team members approve of what’s been completed
 
 
-##Ethics
+## Ethics
 - List all external sources for code, design, or other artefacts that
 you have used in your program.
 - List all tools that you have used beyond Processing, Git, GitHub,
