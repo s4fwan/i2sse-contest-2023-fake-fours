@@ -34,38 +34,29 @@ Requirements:
 and tells whether they passed or failed.
 
 ## System Test
-- List the user stories and requirements that were the source for the system tests.
+- Include a table that lists the system tests, that weren’t acceptance tests. These are tests that run the entire program, and are
+executed by the team to test features they added themselves.
+- Include in that table the outcome for each system test, including
+an overview of the test and whether it passed or failed.
 
-User stories:
--	As a user, I want to see an animation of a JUDGE.
--	As a user, I want to interact with a JUDGE, so that it sits and stands.
--	As a user, I want to see a JUMPING CUCUMBER.
--	As a user, I want to interact with a CUCUMBER, so it is JUMPING.
-Requirements:
--	Show an animation of a JUDGE 
--	Show an animation of a CUCUMBER 
-
-- Describe your test plan.
-- Report on the outcome of the system test, including an overview of the tests and whether they passed or failed.
 
 ## Unit Tests
-- Select at least four important components of your animation, and describe the unit tests for these components. Describe them per component.
+- Select at least four sub-components of your animation.
+- Include a table of lists for each component of their unit tests. Include the test inputs, the expected output/outcome, and whether
+the test failed or passed.
 
--	Image of a cucumber (can users see the image/ is it moving across the screen)
--	Cucumber interaction (can users interact/ does the cucumber do what is required)
--	Image of a judge (can users see the image/ is it moving)
--	Judge interaction (can users interact/ does the judge do what is required)
-The image of the cucumber moving across the screen was the first important animation our team worked on. The first test it has to pass was if the cucumber image was visible to the users when the run the code. 
-
-- Describe how you selected test cases, and how you ensured sufficient coverage.
-- Report on the outcome of the test, including how many passed or failed.
+## Software Quality
+- Include a table that lists all warnings that the Comp1050 Checker
+PMD in the GitHub Actions tab raises for your project.
+- List which issues you fixed since week 11. Give a brief rationale
+for fixing the issue.
 
 ## Project Management
 - Describe the roles and responsibilities of the team members that were agreed on before the sprint commenced.
 
 The roles our teamed agreed on during week 8 when the sprint commenced include Safwan as our SCRUM master and Allen as our Product Owner. Safwan was the most appropriate choice as our SCRUM master as he has a deep understanding surrounding GitHub and possesses a lot of good group leader qualities. 
 
-- Describe the processes that you defined before the sprint to ensure software quality.
+- Describe the review processes that you defined before the sprint to ensure software quality.
 - Provide your "Definition of Done."
 
 DoD:
@@ -78,16 +69,11 @@ DoD:
 -	All team members approve of what’s been completed
 
 
-## Retrospective
-Document the outcome of the retrospective, including:
-- Which roles worked well and which could have been improved?
-
-The role of SCRUM master worked very effectively especially having Safwan filling this role as he was very organised and would the group by demonstrating to other members how to complete tasks and guiding them through activities to help everyone to gain more knowledge on using GitHub and Processing. By doing this our group gained new skills and advanced any existing skills we had. 
-
-- Which processes worked well and which could be improved?
-What advice would you give to students next year?
-
--	Start assignments and reports early 
--	Create plans and set goals (e.g., weekly goals and long-term goals such as completing assignments early)
--	Communicate with group regularly and have a way communicating outside of class that all members have access to. 
-
+##Ethics
+- List all external sources for code, design, or other artefacts that
+you have used in your program.
+- List all tools that you have used beyond Processing, Git, GitHub,
+and word processing tools in your project. For both programming and the creation of documentation.
+- Include any other acknowledgement of contributors beyond
+your team or teaching staff, i.e. anyone who was not on your
+team or a tutor or lecturer, who helped you nevertheless
