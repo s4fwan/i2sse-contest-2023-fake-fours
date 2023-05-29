@@ -12,17 +12,14 @@ The two programs our group created includes a cucumber jumping and a judge. The 
 ## User Manual
 Provide a detailed user manual that describes how to interact with your animation.
 
--	User runs cucumber program. 
--	Animation of cucumber moving across the screen will appear when the user runs the program. 
--	User clicks to interact with the cucumber. When the user interacts with the cucumber it jumps and falls back to the ground.
+First program (jumping cucumber):
+User runs cucumber program, and an image of a cucumber will appear on screen in front of a background that has grass and a blue sky. The cucumber will automatically move across the screen from left to right and then go back once it reaches the right side of the screen. Users can interact with cucumber animation by clicking on the cucumber. When the users click on the cucumber it will jump and then fall to the ground. If the user clicks while the cucumber is mid jump, the cucumber will continue its current jump and will not be affected by the user interaction.
 
--	User runs judge program.
--	Animation of a judge walking across the screen appears. 
--	User clicks to interact with the judge. When the user clicks on the judge it will sit and when user clicks on the judge it will stand 
+Second program (judge):
+User runs judge program, and an image of a judge will appear on screen in front of a background of trees. The judge will walk around the screen in a random pattern. Users can interact with the animation of the judge by clicking on it. When the user clicks on the judge it will sit down and if the user clicks on it again it will stand up. If the user clicks on the screen around the judge, it will not affect the judge and it will continue with its previous actions.
 
--	User runs cucumber and judge program.
--	Judge and cucumber appear. 
-
+Final combined program (game):
+User runs the program and an image of a judge, a cucumber, a judge’s desk, and a cucumber in a cage will appear on screen in front of a background of trees. The cucumber will automatically move across the screen starting at the left-hand side and the move across back and forth across the screen while jumping up and down. The users will be able to control the judge using keys on their keyboard. The keys A and D will allow the judge to run across the screen from side to side and W and the spacebar allows the judge to jump. At the top of the screen there is a health bar from the judge which will go down every time the judge is covered by the cucumber. Users will have to user their keyboards to avoid being covered by the cucumber. Once the judge loses all its health the screen will turn red and the text “Game over” will appear thus leading the program to end. 
 
 ## Design and Architecture
 Please include a graphical representation of the architecture of your program, illustrating how its primary components relate to each other. You may omit certain details to ensure clarity in the diagram. It is meant to give an overview, rather than a complete picture.
