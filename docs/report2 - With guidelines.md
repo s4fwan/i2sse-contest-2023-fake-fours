@@ -1,16 +1,10 @@
 # Final Report jj
 
-Before the deadline, download a PDF version of this report, and submit it on iLearn. We will mark the report uploaded on iLearn.
-
-Use the structure below for your report. Remove line 3 and 5 of the markdown file.
-
 ## Introduction
-Provide a description of the topic, including what the two programs will do and what users can expect from them.
 
-The two programs our group created includes a cucumber jumping and a judge. The first program shows the suers a cucumber moving across the screen from left to right and then back again. The users can interact with it by clicking on the cucumber to make it jump up and then it falls back to the ground while it continues to travel across the screen. The second program shows a judge moving across the screen randomly. Users can click on the judge which causes it to sit and if they click again while it’s sitting the judge will stand up. If the users click anywhere but the judge, it will continue with its previous actions and no change will occur. The two programs together make an interactive game which involves the cucumber being covered by the judge. In this game the cucumber will move across the screen and will jump without the user interacting with it, but the user will be able to use their keyboards to control the judge to run around the screen and jump. The users will have to prevent the cucumber covering the judge by interacting with the judge. If the cucumber covers the judge, the judge will lose health. Once the judge loses all its health the program will end. The game also features music to make it more enjoyable. 
+The two programs our group created includes a cucumber jumping and a judge. The first program shows the suers a cucumber moving across the screen from left to right and then back again. The users can interact with it by clicking on the cucumber to make it jump up and then it falls back to the ground while it continues to travel across the screen. The second program shows a judge moving across the screen randomly. Users can click on the judge which causes it to sit and if they click again while it’s sitting the judge will stand up. If the users click anywhere but the judge, it will continue with its previous actions and no change will occur. The two programs together make an interactive game which involves the cucumber being covered by the judge. In this game the cucumber will move across the screen and will jump without the user interacting with it, but the user will be able to use their keyboards to control the judge to run around the screen and jump. A judge desk and a cucumber in jail are also shown when users run the program. The users can destroy the desk with a gavel which will make the desk and jail cell with the cucumber disappear and reappear in a different random location on screen. Everytime a desk is destroyed the user will gain one point and a score is displayed on the upper left-hand side of the screen.The users will also have to prevent the cucumber covering the judge by interacting with the judge. If the cucumber covers the judge, the judge will lose health. Once the judge loses all its health the program will end. The game also features music to make it more enjoyable. 
 
 ## User Manual
-Provide a detailed user manual that describes how to interact with your animation.
 
 First program (jumping cucumber):
 User runs cucumber program, and an image of a cucumber will appear on screen in front of a background that has grass and a blue sky. The cucumber will automatically move across the screen from left to right and then go back once it reaches the right side of the screen. Users can interact with cucumber animation by clicking on the cucumber. When the users click on the cucumber it will jump and then fall to the ground. If the user clicks while the cucumber is mid jump, the cucumber will continue its current jump and will not be affected by the user interaction.
@@ -19,7 +13,7 @@ Second program (judge):
 User runs judge program, and an image of a judge will appear on screen in front of a background of trees. The judge will walk around the screen in a random pattern. Users can interact with the animation of the judge by clicking on it. When the user clicks on the judge it will sit down and if the user clicks on it again it will stand up. If the user clicks on the screen around the judge, it will not affect the judge and it will continue with its previous actions.
 
 Final combined program (game):
-User runs the program and an image of a judge, a cucumber, a judge’s desk, and a cucumber in a cage will appear on screen in front of a background of trees. The cucumber will automatically move across the screen starting at the left-hand side and the move across back and forth across the screen while jumping up and down. The users will be able to control the judge using keys on their keyboard. The keys A and D will allow the judge to run across the screen from side to side and W and the spacebar allows the judge to jump. At the top of the screen there is a health bar from the judge which will go down every time the judge is covered by the cucumber. Users will have to user their keyboards to avoid being covered by the cucumber. Once the judge loses all its health the screen will turn red and the text “Game over” will appear thus leading the program to end. 
+User runs the program and an image of a judge, a cucumber, a judge’s desk, and a cucumber in a cage will appear on screen in front of a background of trees. The cucumber will automatically move across the screen starting at the left-hand side and the move across back and forth across the screen while jumping up and down. The users will be able to control the judge using keys on their keyboard. The keys A and D will allow the judge to run across the screen from side to side and W and the spacebar allows the judge to jump. Users can press S to allow the judge to use his gavel. The gavel can be used to destroy the judge’s desk which has a health bar appear over it whenever the judge stands at the desk. Once the desk is destroyed users will gain one point. A point score is at the upper left-hand side of the screen. At the top of the screen next to the point score there is a health bar from the judge which will go down every time the judge is covered by the cucumber. Users will have to user their keyboards to avoid being covered by the cucumber. Once the judge loses all its health the screen will turn red and the text “Game over” will appear thus leading the program to end. 
 
 ## Design and Architecture
 Please include a graphical representation of the architecture of your program, illustrating how its primary components relate to each other. You may omit certain details to ensure clarity in the diagram. It is meant to give an overview, rather than a complete picture.
@@ -36,8 +30,8 @@ Requirements:
 -	Show an animation of a JUDGE 
 -	Show an animation of a CUCUMBER 
 
-- Describe your test plan.
-- Report on the outcome of the user acceptance test, including an overview of the tests and whether they passed or failed.
+- Include a table that gives an overview of the acceptance tests
+and tells whether they passed or failed.
 
 ## System Test
 - List the user stories and requirements that were the source for the system tests.
