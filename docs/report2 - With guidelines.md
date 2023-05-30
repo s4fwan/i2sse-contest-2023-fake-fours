@@ -1,10 +1,10 @@
 # Final Report 
 
-## Introduction
+## Introduction - Amelia
 
-The two programs our group created includes a cucumber jumping and a judge. The first program shows the suers a cucumber moving across the screen from left to right and then back again. The users can interact with it by clicking on the cucumber to make it jump up and then it falls back to the ground while it continues to travel across the screen. The second program shows a judge moving across the screen randomly. Users can click on the judge which causes it to sit and if they click again while it’s sitting the judge will stand up. If the users click anywhere but the judge, it will continue with its previous actions and no change will occur. The two programs together make an interactive game which involves the cucumber being covered by the judge. In this game the cucumber will move across the screen and will jump without the user interacting with it, but the user will be able to use their keyboards to control the judge to run around the screen and jump. A judge desk and a cucumber in jail are also shown when users run the program. The users can destroy the desk with a gavel which will make the desk and jail cell with the cucumber disappear and reappear in a different random location on screen. Everytime a desk is destroyed the user will gain one point and a score is displayed on the upper left-hand side of the screen.The users will also have to prevent the cucumber covering the judge by interacting with the judge. If the cucumber covers the judge, the judge will lose health. Once the judge loses all its health the program will end. The game also features music to make it more enjoyable. 
+The two programs our group created includes a cucumber jumping and a judge. The first program shows the users a cucumber moving across the screen from left to right and then back again. The users can interact with it by clicking on the cucumber to make it jump up and then it falls back to the ground while it continues to travel across the screen. The second program shows a judge moving across the screen randomly. Users can click on the judge which causes it to sit and if they click again while it’s sitting the judge will stand up. If the users click anywhere but the judge, it will continue with its previous actions and no change will occur. The two programs together make an interactive game which involves the cucumber being covered by the judge. In this game the cucumber will move across the screen and will jump without the user interacting with it, but the user will be able to use their keyboards to control the judge to run around the screen and jump. A judge desk and a cucumber in jail are also shown when users run the program. The users can destroy the desk with a gavel which will make the desk and jail cell with the cucumber disappear and reappear in a different random location on screen. Everytime a desk is destroyed the user will gain one point and a score is displayed on the upper left-hand side of the screen.The users will also have to prevent the cucumber covering the judge by interacting with the judge. If the cucumber covers the judge, the judge will lose health. Once the judge loses all its health the program will end. The game also features music to make it more enjoyable. 
 
-## User Manual
+## User Manual - Amelia
 
 First program (jumping cucumber):
 User runs cucumber program, and an image of a cucumber will appear on screen in front of a background that has grass and a blue sky. The cucumber will automatically move across the screen from left to right and then go back once it reaches the right side of the screen. Users can interact with cucumber animation by clicking on the cucumber. When the users click on the cucumber it will jump and then fall to the ground. If the user clicks while the cucumber is mid jump, the cucumber will continue its current jump and will not be affected by the user interaction.
@@ -15,10 +15,10 @@ User runs judge program, and an image of a judge will appear on screen in front 
 Final combined program (game):
 User runs the program and an image of a judge, a cucumber, a judge’s desk, and a cucumber in a cage will appear on screen in front of a background of trees. The cucumber will automatically move across the screen starting at the left-hand side and the move across back and forth across the screen while jumping up and down. The users will be able to control the judge using keys on their keyboard. The keys A and D will allow the judge to run across the screen from side to side and W and the spacebar allows the judge to jump. Users can press S to allow the judge to use his gavel. The gavel can be used to destroy the judge’s desk which has a health bar appear over it whenever the judge stands at the desk. Once the desk is destroyed users will gain one point. A point score is at the upper left-hand side of the screen. At the top of the screen next to the point score there is a health bar from the judge which will go down every time the judge is covered by the cucumber. Users will have to user their keyboards to avoid being covered by the cucumber. Once the judge loses all its health the screen will turn red and the text “Game over” will appear thus leading the program to end. 
 
-## Design and Architecture
-Please include a graphical representation of the architecture of your program, illustrating how its primary components relate to each other. You may omit certain details to ensure clarity in the diagram. It is meant to give an overview, rather than a complete picture.
-
+## Design and Architecture - Michael
+// need to add the photo when everyones done
 ## User Acceptance Tests
+
 - List the user stories and requirements that were the source for the user acceptance tests.
 
 User stories:
@@ -45,17 +45,20 @@ an overview of the test and whether it passed or failed.
 - Include a table of lists for each component of their unit tests. Include the test inputs, the expected output/outcome, and whether
 the test failed or passed.
 
-## Software Quality
-- Include a table that lists all warnings that the Comp1050 Checker
-PMD in the GitHub Actions tab raises for your project.
+## Software Quality - Michael
+- The COMP1050 Checker PMD was only able to find twi instances of the same error. That error was 
+a Code style warning indicating that some of our variable names were too short in the code and may cause 
+syntax or comprehension errors when coding or reading the code. 
 
 1 warning from the Comp1050 checker:
 - Code style (variables were too short)
 
-- List which issues you fixed since week 11. Give a brief rationale
-for fixing the issue.
+-  We only had the to fix the one error, we fixed it by incorperating "camelCase" variables, which typically 
+require two words rather than to one to be done appropiatly. The rationale to this change is based on the fact 
+that when a number of global and local named variables are used within the code its benefical to use specific names 
+rather than typical names such "x" and "y" which could end up being reused and end up mixing up crucial values.
 
-## Project Management
+## Project Management - Amelia
 
 Roles and responsibilities:
 The roles our teamed agreed on during week 8 when the sprint commenced include Safwan as our SCRUM master and Allen as our Product Owner. Safwan was the most appropriate choice as our SCRUM master as he has a deep understanding surrounding GitHub and possesses a lot of good group leader qualities. The other team members, Michael and Amelia, had the responsibility of taking turns typing up the weekly retrospectives that were due at the end of each lesson and then submitting them once all the team had reviewed and approved.
@@ -75,7 +78,7 @@ DoD:
 -	All team members approve of what’s been completed
 
 
-## Ethics
+## Ethics - Safwan
 - List all external sources for code, design, or other artefacts that
 you have used in your program.
 - List all tools that you have used beyond Processing, Git, GitHub,
