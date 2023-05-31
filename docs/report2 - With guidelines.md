@@ -17,7 +17,18 @@ Final combined program (game):
 User runs the program and an image of a judge, a cucumber, a judge’s desk, and a cucumber in a cage will appear on screen in front of a background of trees. The cucumber will automatically move across the screen starting at the left-hand side and the move across back and forth across the screen while jumping up and down. The users will be able to control the judge using keys on their keyboard. The keys A and D will allow the judge to run across the screen from side to side and W and the spacebar allows the judge to jump. Users can press S to allow the judge to use his gavel. The gavel can be used to destroy the judge’s desk which has a health bar appear over it whenever the judge stands at the desk. Once the desk is destroyed users will gain one point. A point score is at the upper left-hand side of the screen. At the top of the screen next to the point score there is a health bar from the judge which will go down every time the judge is covered by the cucumber. Users will have to user their keyboards to avoid being covered by the cucumber. Once the judge loses all its health the screen will turn red and the text “Game over” will appear thus leading the program to end. 
 
 ## Design and Architecture - Michael
-// need to add the photo when everyones done
+
+*insert photo here SAFWAN*
+
+
+This Graphic is a representation of the architecture of our program. We use this 
+to illustrate how aspects of our program will interact with each other and the effect certain 
+proccesses will have on the end product. We define the functions that will be altered by aspects of the code 
+which will have an effect on the overall animation, such as "followCucumber()" and "isCovered()". We squares 
+to represent functions or processes such as menu and judge, these contain functions that will be called upon within that process.
+Arrows are then used to illustrate clearly what will have an interaction with that, e.g an arrow clearly shows what parts of the main tab
+will displayed on the menu.
+
 ## User Acceptance Tests
 
 - List the user stories and requirements that were the source for the user acceptance tests.
