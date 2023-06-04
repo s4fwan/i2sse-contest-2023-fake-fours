@@ -15,7 +15,7 @@ Action: Jumping
 
 ## User Manual or Instructions
 
-Describe here how to use your program.
+Describe here how to use your program
 
 
 
